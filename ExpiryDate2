@@ -1,0 +1,6 @@
+{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "additionalRowClass": "=if([$Date_x0020_of_x0020_Next_x0020_I] <= @now && toString([$Date_x0020_of_x0020_Next_x0020_I]) !='' ,
+  'sp-field-severity--severeWarning',if([$Date_x0020_of_x0020_Next_x0020_I] <= @now+2592000000 && [$Date_x0020_of_x0020_Next_x0020_I] >= @now,
+  'sp-field-severity--warning','sp-field-severity--good') || if (@rowIndex % 2 == 0, 'ms-bgColor-themeLighter ms-bgColor-themeLight--hove', '') "
+}
