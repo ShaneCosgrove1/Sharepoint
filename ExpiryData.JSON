@@ -1,4 +1,0 @@
-{
-  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
-  "additionalRowClass": "=if([$ExpiryDate] <= @now && toString([$ExpiryDate]) !='' ,'sp-field-severity--severeWarning',if([$ExpiryDate] <= @now+5184000000 && [$ExpiryDate] >= @now,'sp-field-severity--warning','sp-field-severity--good') || if (@rowIndex % 2 == 0, 'ms-bgColor-themeLighter ms-bgColor-themeLight--hove', '') "
-}
